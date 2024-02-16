@@ -139,6 +139,14 @@ p{
     background-color: white;
 }
 
+.position-r{
+    position: relative;
+}
+
+.position-a{
+    position: absolute;
+}
+
 /* -------------------------
     BUTTON
 --------------------------*/
@@ -355,6 +363,50 @@ nav{
 }
 
 /* section about us */
+.about-us .container{
+    padding: 0 50px;
+}
+
+.about-us h5{
+    padding: 20px 0;
+    font-size: 24px ;
+    line-height: 1.5;
+}
+
+.about-us{
+    padding: 80px 0;
+}
+
+.about-us .row{
+    justify-content: space-between;
+}
+
+.about-us .row .col:first-child{
+    width: 60%;
+}
+
+.about-us .row .col:last-child{
+    width: 20%;
+}
+
+.about-us p{
+    line-height: 2.5;
+    padding-top: 40px;
+}
+
+.about{
+    background-image: url(img/about.jpg);
+}
+
+.about-us .btn-tertiary{
+    padding: 6px 10px;
+}
+
+.about-us i.position-a{
+    top: -10px;
+    right: -6px;
+    font-size: 70px;
+}
 
 /* -------------------------
     RESPONSIVE
@@ -452,5 +504,19 @@ nav{
 }
 
 @media screen and (max-width: 768px){
+    .about-us .row{
+        flex-direction: column;
+    }
+
+    .about-us p{
+        margin-bottom: 20px;
+    }
+
+    .about-us .row .col:first-child{
+        width: 100%;
+    }
     
+    .about-us .row .col:last-child{
+        width: 100%;
+    }
 }
