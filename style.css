@@ -17,18 +17,22 @@
 /* -------------------------
     GENERAL
 --------------------------*/
-body {
-    font-family: "PT Sans", sans-serif;
+.container{
+    max-width: 1160px;
+    margin: 0 auto;
 }
 
-.container{
-    max-width: 1140px;
-    margin: 0 auto;
+.container-small{
+    max-width: 880px;
 }
 
 .row{
     display: flex;
     flex-wrap: wrap;
+}
+
+.col{
+    padding: 0 10px;
 }
 
 ul{
@@ -38,15 +42,12 @@ ul{
 
 li{
     padding-right: 20px;
-}
-
-li a{
     cursor: pointer;
 }
 
 .box{
     border-radius: 20px;
-    padding: 30px 20px;
+    padding: 20px;
 }
 
 img{
@@ -56,10 +57,33 @@ img{
 /* -------------------------
     TYPOGRAPHY
 --------------------------*/
+body {
+    font-family: "PT Sans", sans-serif;
+}
+
 h5{
     font-size: 20px;
 }
 
+h4{
+    font-size: 30px;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.color-white{
+    color: white;
+}
+
+.txt-center{
+    text-align: center;
+}
+
+p{
+    line-height: 30px;
+}
 /* -------------------------
     UTILITY
 --------------------------*/
@@ -71,6 +95,10 @@ h5{
     flex-grow: 1;
 }
 
+.margin-100{
+    margin: 100px 0;
+}
+
 /* -------------------------
     BUTTON
 --------------------------*/
@@ -79,24 +107,32 @@ h5{
     border: #0084FD;
     border-radius: 14px;
     font-size: 16px;
+    cursor: pointer;
+    margin: 20px 0;
 }
 
 .btn-primary{
     background-color: white;
     padding: 8px 14px;
+    margin: 0;
 }
 
 .btn-secondary{
     padding: 8px 50px;
     background-color: #0084FD;
     color: white;
-    margin: 20px 0;
 }
 
 .btn.btn-secondary i{
     color: white;
     font-size: 16px;
     padding-right: 8px;
+}
+
+.btn-dot{
+    background-color: #9792E4;
+    padding: 10px 14px;
+    border-radius: 50%;
 }
 
 /* -------------------------
@@ -115,7 +151,7 @@ header .logo{
     padding: 16px 0;
 }
 
-header button{
+header .btn-primary{
     margin-top: -12px;
 }
 
@@ -139,26 +175,29 @@ nav{
 
 .intro .col{
     width: calc(100% / 3);
-    padding: 0 10px;
+    margin-top: 20px;
 }
 
-.intro .box.flex .col:first-child{
-    width: 50%;
+.intro img{
+    display: block;
+    max-width: 250px;
 }
 
-.intro .box.flex .col:last-child{
-    width: 50%;
+.intro .row{
+    margin-left: -10px;
+    margin-right: -10px;
 }
 
 .intro .box{
     background-color: #B5DDFF;
-    text-align: center;
-    line-height: 30px;
+    font-size: 14px;
+    color: #546675;
+    height: 100%;
 }
 
 .intro .box.flex{
-    text-align: left;
-    padding: 0 20px;
+    padding: 20px;
+    padding-bottom: 0;
 }
 
 .intro i{
@@ -171,9 +210,41 @@ nav{
     margin: 20px auto; 
 }
 
-.intro img{
-    width: 200px;
+.intro .box.flex h5{
+    margin-top: 0;
 }
+
+/* section planning */
+.planning{
+    background-color: #9792E4;
+    padding-bottom: 60px;
+}
+
+.planning .col{
+    width: 50%;
+}
+
+.planning  .row .col:last-child{
+    text-align: center;
+    padding: 0 40px;
+}
+
+.planning .box{
+    background-color: white;   
+}
+
+.planning .col.flex{
+    align-items: end;
+}
+
+.planning img:last-child{
+    max-width: 250px;
+}
+
+.planning h4{
+    margin: 30px 0;
+}
+
 /* -------------------------
     RESPONSIVE
 --------------------------*/
@@ -193,10 +264,6 @@ nav{
     }
 }
 
-@media screen and (max-width: 768px){
-    
-}
-
 /* section intro */
 @media screen and (max-width: 992px){
     .intro .box.flex{
@@ -212,5 +279,24 @@ nav{
 
     .intro .col{
         width: 100%;
+    }
+}
+
+/* section planning */
+
+@media screen and (max-width: 992px){
+    .planning .row{
+        flex-direction: column;
+    }
+
+    .planning .col{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .planning .row .col:last-child{
+        padding:0 ;
     }
 }
