@@ -72,6 +72,10 @@ h3{
     font-size: 40px;
 }
 
+h2{
+    font-size: 50px;
+}
+
 .italic{
     font-style: italic;
 }
@@ -91,11 +95,24 @@ p{
 .txt-upper{
     text-transform: uppercase;
 }
+
+.color-purple{
+    color: #9792E4;
+}
+
+
+.color-gray{
+    color: #546675;
+}
 /* -------------------------
     UTILITY
 --------------------------*/
 .flex{
     display: flex;
+}
+
+.wrap{
+    flex-wrap: wrap;
 }
 
 .grow{
@@ -106,10 +123,6 @@ p{
     margin: 100px 0;
 }
 
-.color-purple{
-    color: #9792E4;
-}
-
 .circle{
     background-position: center;
     background-size: cover;
@@ -117,6 +130,15 @@ p{
     height: 200px;
     width: 200px;
 }
+
+.bg-purple{
+    background-color: #9792E4;
+}
+
+.bg-white{
+    background-color: white;
+}
+
 /* -------------------------
     BUTTON
 --------------------------*/
@@ -139,6 +161,12 @@ p{
     padding: 8px 50px;
     background-color: #0084FD;
     color: white;
+}
+
+.btn-tertiary{
+    background-color: #9792E4;
+    padding: 6px 40px;
+    
 }
 
 .btn.btn-secondary i{
@@ -234,7 +262,6 @@ nav{
 
 /* section planning */
 .planning{
-    background-color: #9792E4;
     padding-bottom: 60px;
 }
 
@@ -309,6 +336,25 @@ nav{
 .testimonial-3{
     background-image: url(img/testimonial3.jpg);
 }
+/* section benefits */
+.benefits{
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+.benefits h3{
+    margin-bottom: 40px;
+}
+
+.benefits .col{
+    margin: 10px 0;
+    width: calc(100% / 3);
+}
+
+.benefits h5{
+    margin-bottom: 20px;
+}
+
+/* section about us */
 
 /* -------------------------
     RESPONSIVE
@@ -376,10 +422,6 @@ nav{
 
 /* section testimonials */
 
-@media screen and (max-width: 992px){
-    
-}
-
 @media screen and (max-width: 768px){
     .testimonials .row {
         flex-direction: column;
@@ -390,4 +432,25 @@ nav{
         padding: 10px 0 !important;
         text-align: center;
     }
+}
+/* section benefits */
+@media screen and (max-width: 992px){
+    .benefits .col{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .benefits .col{
+        width: 100%;
+    }
+}
+
+/* about us */
+@media screen and (max-width: 992px){
+    
+}
+
+@media screen and (max-width: 768px){
+    
 }
