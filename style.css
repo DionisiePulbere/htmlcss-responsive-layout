@@ -76,6 +76,12 @@ h2{
     font-size: 50px;
 }
 
+h1{
+    font-size: 80px;
+    color: #FDC15F;
+    padding-bottom: 20px;
+}
+
 .italic{
     font-style: italic;
 }
@@ -408,6 +414,30 @@ nav{
     font-size: 70px;
 }
 
+/* section try */
+.try .txt-upper{
+    color: #D0CEF2;
+}
+
+.try{
+    padding: 50px;
+}
+
+.try .container{
+    max-width: 560px;
+}
+
+.try p{
+    padding: 0 60px;
+}
+
+.try button{
+    padding: 20px 60px;
+    border-radius: 50px;
+    margin: 30px 0;
+}
+
+
 /* -------------------------
     RESPONSIVE
 --------------------------*/
@@ -421,7 +451,7 @@ nav{
         display: block;
     }
     
-    .container{
+    .header .container{
         width: 100%;
         padding: 0 30px;
     }
@@ -498,9 +528,11 @@ nav{
     }
 }
 
-/* about us */
+/* section about us */
 @media screen and (max-width: 992px){
-    
+    .about-us .row .col:last-child{
+        width: 30%;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -518,5 +550,21 @@ nav{
     
     .about-us .row .col:last-child{
         width: 100%;
+    }
+}
+
+/* section try */
+@media screen and (max-width: 768px){
+    .try h1{
+        font-size: 60px;
+    }
+
+    .try h2{
+        font-size: 30px;
+        padding: 20px 0;
+    }
+
+    .try p{
+        padding: 0;
     }
 }
