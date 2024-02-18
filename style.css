@@ -471,7 +471,7 @@ footer .container div{
         display: block;
     }
     
-    .header .container{
+    .container{
         width: 100%;
         padding: 0 30px;
     }
@@ -585,6 +585,10 @@ footer .container div{
     }
 
     .try p{
+        padding: 0;
+    }
+
+    .try .container{
         padding: 0;
     }
 }
