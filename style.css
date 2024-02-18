@@ -437,7 +437,27 @@ nav{
     margin: 30px 0;
 }
 
+/* -------------------------
+    FOOTER
+--------------------------*/
+footer{
+    background-color: #333333;
+    padding: 40px 0;
+}
 
+footer .container{
+    max-width: 500px;
+    line-height: normal;
+}
+
+footer p{
+    line-height: normal;
+}
+
+footer .container div{
+    padding: 70px 40px;
+    padding-bottom: 0;
+}
 /* -------------------------
     RESPONSIVE
 --------------------------*/
@@ -567,4 +587,12 @@ nav{
     .try p{
         padding: 0;
     }
+}
+
+/* footer */
+@media screen and (max-width: 768px){
+    footer .container div{
+    padding: 70px 20px;
+    padding-bottom: 0;
+}
 }
